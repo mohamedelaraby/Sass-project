@@ -1,8 +1,20 @@
-// Blog Colors
-$primary-color: #4682b4;     //steel blue
-$secondary-color:#87cefa;   //skyblue
-$light-color:#f4f4f4;       //Gray
-$dark-color: #333;        
+//Import files
+@import 'variables';
+
+
+
+
+// Default Setting
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+//Main Content
 body{
-    background: $dark-color;
+    background: $light-color;
+    color:$dark-color;   
+    font-family: $font-montserrat;
+    line-height: 1.5;
 }
