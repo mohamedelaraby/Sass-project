@@ -52,14 +52,16 @@ header h2 {
   color: #333; }
 
 .btn-light:hover {
-  transform: rotate(20deg); }
+  transform: rotate(20deg);
+  background-color: #dbdbdb; }
 
 .btn-dark {
   background: #333;
   color: #f4f4f4; }
 
 .btn-dark:hover {
-  transform: rotate(-20deg); }
+  transform: rotate(-20deg);
+  background-color: #4d4d4d; }
 
 .pragraph-light, .pragraph-dark {
   font-size: 1.6rem;

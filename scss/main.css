@@ -64,6 +64,7 @@ header h2 {
 
 .btn-light:hover {
   transform: rotate(20deg);
+  background-color: #dbdbdb;
 }
 
 .btn-dark {
@@ -73,6 +74,7 @@ header h2 {
 
 .btn-dark:hover {
   transform: rotate(-20deg);
+  background-color: #4d4d4d;
 }
 
 .pragraph-light, .pragraph-dark {
