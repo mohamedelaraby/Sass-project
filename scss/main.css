@@ -24,7 +24,7 @@ header h2 {
 
 .section {
   padding: 3rem;
-  font-size: 1.6rem;
+  font-size: 1.6 rem;
 }
 
 .section h3 {
@@ -39,4 +39,42 @@ header h2 {
 .section-b {
   background: #87cefa;
   color: #f4f4f4;
+}
+
+.btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  border: none;
+  cursor: help;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.btn-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+
+.pragraph-light, .pragraph-dark {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 2rem;
+  font-weight: 100;
+  text-align: justify;
+}
+
+.pragraph-light {
+  color: #f4f4f4;
+  background: #333;
+}
+
+.pragraph-dark {
+  background: #f4f4f4;
+  color: #333;
 }
