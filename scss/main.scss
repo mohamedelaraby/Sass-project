@@ -14,7 +14,25 @@
 //Main Content
 body{
     background: $light-color;
-    color:$dark-color;   
+    color:$dark-color;
     font-family: $font-montserrat;
     line-height: 1.5;
+}
+
+//-----[ Header ] ------//
+header{
+    background: $dark-color;
+    color: $light-color;
+    padding: 1rem;
+
+    // h1 style
+    h2{
+        text-align: center;
+    }
+
+}
+
+//-----[ Section ] ------//
+.section{
+    padding: 3rem;
 }
