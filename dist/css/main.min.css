@@ -6,7 +6,8 @@ body {
   background: #f4f4f4;
   color: #333;
   font-family: "Montserrat",sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-size: 62.5%; }
 
 header {
   background: #333;
@@ -14,7 +15,20 @@ header {
   padding: 1rem; }
 
 header h2 {
-  text-align: center; }
+  text-align: center;
+  font-size: 2.1rem; }
 
 .section {
-  padding: 3rem; }
+  padding: 3rem;
+  font-size: 1.6rem; }
+
+.section h3 {
+  font-size: 2rem; }
+
+.section-a {
+  background: #4682b4;
+  color: #f4f4f4; }
+
+.section-b {
+  background: #87cefa;
+  color: #f4f4f4; }

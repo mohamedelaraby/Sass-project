@@ -17,7 +17,10 @@ body{
     color:$dark-color;
     font-family: $font-montserrat;
     line-height: 1.5;
+    font-size: $mainFontSize;
 }
+
+
 
 //-----[ Header ] ------//
 header{
@@ -28,11 +31,31 @@ header{
     // h1 style
     h2{
         text-align: center;
+        font-size: 2.1rem;
     }
-
+ 
 }
 
 //-----[ Section ] ------//
 .section{
     padding: 3rem;
+    font-size: 1.6rem;
+
+
+    // h3
+    h3{
+        font-size: 2rem;
+    }
+
+    // .section .section-a   : [ & ] :- Refers to the parent element of class or any html tag
+   &-a{
+       background: $primary-color ;
+       color: $light-color;
+   }
+
+   //.section .section-b
+   &-b{
+       background: $secondary-color;
+       color: $light-color;
+   }
 }
