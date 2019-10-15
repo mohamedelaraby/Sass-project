@@ -1,5 +1,7 @@
 //Import files
 @import 'variables';
+@import 'functions';
+@import 'mixins';
 
 
 
@@ -14,7 +16,7 @@
 //Main Content
 body{
     background: $light-color;
-    color:$dark-color;
+    color:set-text-color($light-color);
     font-family: $font-montserrat;
     line-height: 1.5;
     font-size: $mainFontSize;
@@ -25,7 +27,7 @@ body{
 //-----[ Header ] ------//
 header{
     background: $dark-color;
-    color: $light-color;
+    color:set-text-color($dark-color);
     padding: 1rem;
 
     // h1 style
@@ -41,22 +43,25 @@ header{
     padding: 3rem;
     font-size: 1.6 rem;
 
-
     // h3
     h3{
         font-size: 2rem;
+
+        &:hover{
+            cursor: progress;
+        }
     }
 
     // .section .section-a   : [ & ] :- Refers to the parent element of class or any html tag
    &-a{
        background: $primary-color ;
-       color: $light-color;
+       color: set-text-color($primary-color);
    }
 
    //.section .section-b
    &-b{
        background: $secondary-color;
-       color: $light-color;
+       color: set-text-color($secondary-color);
    }
 }
 
@@ -69,20 +74,32 @@ header{
     text-decoration: none;
     margin-top: 1rem;
     font-size: 1.2rem;
+    border-radius: 10rem;
+    @include transition( transform ,  0.3s);
 }
 
 .btn {
     &-light {
         @extend %btn-shared;
         background: $light-color;
-        color: $dark-color;
+        color: set-text-color($light-color);
+
+        // btn-light:hover
+        &:hover{
+            @include transform(rotate(20deg));
+        }
     }
 
     &-dark {
         @extend%btn-shared;
         background: $dark-color;
-        color: $light-color;
+        color: set-text-color($dark-color);
+        
+        &:hover{
+            @include transform(rotate(-20deg));
+        }
     }
+
 }
 
 
@@ -99,15 +116,14 @@ header{
 
     &-light{
         @extend %pragraph-shared;
-        color: $light-color;
-        background: $dark-color;
+      
+       
     }
 
 
     &-dark{
         @extend %pragraph-shared;
-        background: $light-color;
-        color: $dark-color;
+       
     }
 }
 
